@@ -1,5 +1,5 @@
 <?php
-class HomeModel extends Query{
+class PrincipalModel extends Query{
  
     public function __construct()
     {
@@ -7,7 +7,7 @@ class HomeModel extends Query{
     }
     public function getCategorias()
     {
-        $sql ="SELECT * FROM categoria";
+        $sql ="SELECT * FROM categorias";
         return $this->selectAll($sql);
     }
 }
