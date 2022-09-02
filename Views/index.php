@@ -89,18 +89,12 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-md-3 p-5 mt-3">
+     <?php foreach ($data['categoia']as $categoria){  ?>    
+       <div class="col-12 col-md-3 p-5 mt-3">
         <a href="#"><img src="<?php echo BASE_URL; ?>assets/img/categoria 1.jpg" class="rounded-circle img-fluid border"></a>
-        <h5 class="text-center mt-3 mb-3">Watches</h5>
-      </div>
-      <div class="col-12 col-md-3 p-5 mt-3">
-        <a href="#"><img src="<?php echo BASE_URL; ?>assets/img/categoria 2.jpg" class="rounded-circle img-fluid border"></a>
-        <h2 class="h5 text-center mt-3 mb-3">TIENDA</h2>
-      </div>
-      <div class="col-12 col-md-3 p-5 mt-3">
-        <a href="#"><img src="<?php echo BASE_URL; ?>assets/img/categoria 3.jpg" class="rounded-circle img-fluid border"></a>
-        <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-      </div>
+        <h5 class="text-center mt-3 mb-3"><?php echo $categoria['categoria '] ?></h5>
+       </div>
+      <?php }?>
     </div>
   </section>
   <!-- End Categories of The Month -->
