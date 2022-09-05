@@ -19,27 +19,27 @@
   <link rel="icon" type="image/png" sizes="16x16" href="<?php echo BASE_URL; ?>assets/logo/favicon-16x16.png">
   <link rel="manifest" href="<?php echo BASE_URL; ?>assets/logo/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="<?php echo BASE_URL; ?>assets/logo/ms-icon-144x144.png">
  <meta name="theme-color" content="#ffffff">
-
-
+ 
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="apple-touch-icon" href="<?php echo BASE_URL; ?>assets/img/apple-icon.png">
-  <link rel="shortcut icon" type="image/x-icon" href="<?php echo BASE_URL; ?>assets/img/favicon.ico">
+  <link rel="apple-touch-icon" href="<?php echo BASE_URL .'assets/img/apple-icon.png'; ?>">
+  <link rel="shortcut icon" type="image/x-icon" href="<?php echo BASE_URL .'assets/img/favicon.ico'; ?>">
 
-  <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/templatemo.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL.'assets/css/bootstrap.min.css' ; ?>">
+  <link rel="stylesheet" href="<?php echo BASE_URL .'assets/css/templatemo.css'; ?>">
 
   <!-- Load fonts style after rendering the layout styles -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     
     <!-- Slick -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL .'assets/css/slick/slick.css'; ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL.'assets/css/slick/slick-theme.css' ; ?>
+    <!--
 
 </head>
 
@@ -104,20 +104,25 @@
             <div class="input-group">
               <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
               <div class="input-group-text">
-                <i class="fa fa-fw fa-search"></i>
+                <i class="fas fa-fw fa-search"></i>
               </div>
             </div>
           </div>
           <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-            <i class="fa fa-fw fa-search text-dark mr-2"></i>
+            <i class="fas fa-fw fa-search text-dark mr-2"></i>
           </a>
           <a class="nav-icon position-relative text-decoration-none" href="#">
-            <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+            <i class="fas fa-fw fa-cart-arrow-down text-dark mr-1"></i>
             <span
-              class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-util text-white">7</span>
+              class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-util text-white">0</span>
           </a>
           <a class="nav-icon position-relative text-decoration-none" href="#">
-            <i class="fa fa-fw fa-user text-dark mr-3"></i>
+            <i class="fas fa-fw fa-heart text-dark mr-1"></i>
+            <span
+              class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-util text-white" id="btnCantidadDeseo">0</span>
+          </a>
+          <a class="nav-icon position-relative text-decoration-none" href="#">
+            <i class="fas fa-fw fa-user text-dark mr-3"></i>
             <span
               class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-util text-white"></span>
           </a>

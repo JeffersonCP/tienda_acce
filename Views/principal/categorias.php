@@ -9,13 +9,7 @@
                     <div class="col-md-12">
                         <ul class="list-inline shop-top-menu pb-3 pt-1">
                             <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="#">Todos</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="#">Men's</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none" href="#">Women's</a>
+                                <a class="h3 text-dark text-decoration-none mr-3" href="#">Producto</a>
                             </li>
                         </ul>
                     </div>
@@ -29,16 +23,11 @@
                                 <div
                                     class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
-                                        <li>
-                                            <a class="btn btn-util text-white btnAddDesseo" href="#" pro="<?php echo $producto ['id']; ?>">
-                                                <i class="fas fa-heart"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="btn btn-util text-white mt-2" href="<?php echo BASE_URL.'principal/detail/' . $producto['id']; ?>"><i
+                                        <li><a class="btn btn-util text-white" href="#"><i
+                                                    class="fas fa-heart"></i></a></li>
+                                        <li><a class="btn btn-util text-white mt-2" href="<?php echo BASE_URL.'principal/detail/' . $producto['id']; ?>"><i
                                                     class="fas fa-eye"></i></a></li>
-                                        <li>
-                                            <a class="btn btn-util text-white mt-2" href="#"><i
+                                        <li><a class="btn btn-util text-white mt-2" href="#"><i
                                                     class="fas fa-cart-plus"></i></a></li>
                                     </ul>
                                 </div>
@@ -70,18 +59,18 @@
                     <ul class="pagination pagination-lg justify-content-end">
                        <?php 
                        $anterior = $data['pagina'] - 1;
-                       $siguiente = $data['pagina'] + 1; 
-                       $url = BASE_URL .'principal/shop/';                 
+                       $siguiente = $data['pagina'] + 1;
+                       $url = BASE_URL .'principal/categorias/'.$data['id_categoria']  ;                 
                        if ($data['pagina']  > 1) {
                         echo '<li class="page-item ">
-                             <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="'.$url .$anterior.'"
+                             <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="'.$url.'/'.$anterior.'"
                              >Anterior</a>
                          </li>';                      
                        }
                        if ($data['total'] >= $siguiente) {
                         echo '<li class="page-item">
                               <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-white"
-                             href="'.$url .$siguiente.'">Siguiente</a>
+                             href="'.$url.'/'.$siguiente.'">Siguiente</a>
                             </li>';                       
                        }
                         ?>                        
