@@ -19,7 +19,7 @@ class Principal extends Controller
     public function shop($page)
     {
         $pagina = (empty($page)) ? 1 : $page ;
-        $porPagina= 10;
+        $porPagina= 12;
         $desde = ($pagina - 1) * $porPagina;
         $data['title'] = 'PRODUCTOS';
         $data['productos'] = $this->model->getProductos($desde, $porPagina);
@@ -54,7 +54,7 @@ class Principal extends Controller
             }
          }
         $pagina = (empty($page)) ? 1 : $page ;
-        $porPagina= 16;
+        $porPagina= 12;
         $desde = ($pagina - 1) * $porPagina;
 
         $data['pagina'] = $pagina;
@@ -78,20 +78,27 @@ class Principal extends Controller
         $data['title'] = 'Tu lista de deseo';
         $this->views-> getView('principal', "deseo", $data);
     }
-    public function listaDeseo()
+    //carrito
+    public function listaProducto()
     {
         $datos = file_get_contents('php://input');
         $json = json_decode($datos, true);
-        $array = array();
+        $array['productos'] = array();
+        $total = 0.00;
         foreach($json as $producto) {
-            $result = $this->model->getListaDeseo($producto['idProducto']);
+            $result = $this->model->getProducto($producto['idProducto']);
             $data['id'] = $result['id'] ;
             $data['nombre'] = $result['nombre'] ;   
             $data['precio'] = $result['precio'] ;
             $data['cantidad'] = $producto['cantidad'] ;
             $data['imagen'] = $result['imagen'] ;
-            array_push($array, $data);
+            $SubTotal =$result['precio'] * $producto['cantidad'];
+            $data['subTotal'] =number_format($SubTotal, 2);
+            array_push($array['productos'], $data);
+            $total += $SubTotal;
         }
+        $array['total']= number_format($total, 2);
+        $array['moneda'] = MONEDA;
         echo json_encode($array, JSON_UNESCAPED_UNICODE);
         die();
     }

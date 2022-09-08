@@ -20,7 +20,7 @@
   <link rel="manifest" href="<?php echo BASE_URL; ?>assets/logo/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="<?php echo BASE_URL; ?>assets/logo/ms-icon-144x144.png">
- <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
  
 
   <meta charset="utf-8">
@@ -33,13 +33,12 @@
   <link rel="stylesheet" href="<?php echo BASE_URL .'assets/css/templatemo.css'; ?>">
 
   <!-- Load fonts style after rendering the layout styles -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL .'assets/css/slick/slick.css'; ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL.'assets/css/slick/slick-theme.css' ; ?>
-    <!--
+    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL.'assets/css/slick/slick-theme.css' ; ?>">
+  
 
 </head>
 
@@ -50,9 +49,9 @@
       <div class="w-100 d-flex justify-content-between">
         <div>
           <i class="fa fa-envelope mx-2"></i>
-          <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info.angel@gmail.com">info.angel@gmail.com</a>
+          <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info.jefferson.cortez593@gmail.com">info.jefferson.cortez593@gmail.com</a>
           <i class="fa fa-phone mx-2"></i>
-          <a class="navbar-sm-brand text-light text-decoration-none" href="tel:900 897 537">900 897 537</a>
+          <a class="navbar-sm-brand text-light text-decoration-none" href="tel:947 678 567">947 678 567</a>
         </div>
         <div>
           <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i
@@ -111,10 +110,10 @@
           <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
             <i class="fas fa-fw fa-search text-dark mr-2"></i>
           </a>
-          <a class="nav-icon position-relative text-decoration-none" href="#">
+          <a class="nav-icon position-relative text-decoration-none" href="#" id="verCarrito">
             <i class="fas fa-fw fa-cart-arrow-down text-dark mr-1"></i>
             <span
-              class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-util text-white">0</span>
+              class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-util text-white" id="btnCantidadCarrito">0</span>
           </a>
           <a class="nav-icon position-relative text-decoration-none" href="<?php echo BASE_URL . 'principal/deseo/'?>">
             <i class="fas fa-fw fa-heart text-dark mr-1"></i>

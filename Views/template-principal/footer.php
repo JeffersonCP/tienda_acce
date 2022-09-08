@@ -1,10 +1,42 @@
-<!-- Start Footer -->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title"><i class="fas fa-cart-arrow-down"></i> Carrito</h5>
+        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="table-responsive">
+       <table class="table table-bordered table-striped teble-hover align-middle" id="tableListaCarrito">
+          <thead >
+            <tr>
+              <th>#</th>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>SubTotal</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+       </div>
+      </div>
+      <div class="modal-footer">
+        <h3 id="totalGeneral"></h3>
+        <a class="btn btn-outline-primary" href="<?php echo BASE_URL . 'clientes';?>">Procesar Pedido</a>
+      </div>
+    </div>
+  </div>
+</div>
 <footer class="bg-dark" id="tempaltemo_footer">
     <div class="container">
       <div class="row">
 
         <div class="col-md-4 pt-5">
-          <h2 class="h2 text-util border-bottom pb-3 border-light logo">Ubicanos</h2>
+          <h2 class="h2 text-util border-bottom pb-3 border-light logo">Ubicacion</h2>
           <ul class="list-unstyled text-light footer-link-list">
             <li>
               <i class="fas fa-map-marker-alt fa-fw"></i>
@@ -12,11 +44,11 @@
             </li>
             <li>
               <i class="fa fa-phone fa-fw"></i>
-              <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+              <a class="text-decoration-none" href="tel:097-567-8679">097-567-8679</a>
             </li>
             <li>
               <i class="fa fa-envelope fa-fw"></i>
-              <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+              <a class="text-decoration-none" href="mailto:jefferson.cortez593@company.com">jefferson.cortez593@company.com</a>
             </li>
           </ul>
         </div>
@@ -32,7 +64,7 @@
             <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
             <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
           </ul>
-        </div>
+        </div> 
 
         <div class="col-md-4 pt-5">
           <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
@@ -43,7 +75,7 @@
             <li><a class="text-decoration-none" href="#">FAQs</a></li>
             <li><a class="text-decoration-none" href="#">Contact</a></li>
           </ul>
-        </div>
+        </div> 
 
       </div>
 
@@ -77,7 +109,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> 
 
     <div class="w-100 bg-black py-3">
       <div class="container">
@@ -89,7 +121,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> 
 
   </footer>
   <!-- End Footer -->
