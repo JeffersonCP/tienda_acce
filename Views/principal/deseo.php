@@ -19,7 +19,7 @@
                     <thead >
                         <tr>
                             <th>#</th>
-                            <th>Producto</th>
+                            <th>Producto defectuso</th>
                             <th>Precio</th>
                             <th>Cantidad</th>
                             <th></th>
